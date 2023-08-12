@@ -8,20 +8,20 @@
 
 int main(void)
 {
-	int i, j;
+	int i, r;
 
 	for (i = 0; i < 100; i++)
 	{
-		for (j = 0; j < 100; j++)
+		for (r = 0; r < 100; r++)
 		{
-			if (i < j)
+			if (i < r)
 			{
 				putchar((i / 10) + 48);
 				putchar((i % 10) + 48);
 				putchar(' ');
-				putchar((j / 10) + 48);
-				putchar((j % 10) + 48);
-				if (i != 98 || j != 99)
+				putchar((r / 10) + 48);
+				putchar((r % 10) + 48);
+				if (i != 98 || r != 99)
 				{
 					putchar(',');
 					putchar(' ');
