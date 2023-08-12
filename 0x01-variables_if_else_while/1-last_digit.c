@@ -2,14 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - entry point
  *
- * description - Prints the last digit of a randomly generated numbe
- * and whether it is greater than 5, less than 6, or 0r
+ * Description main: Prints the last digit of a randomly number
+ *                   and whether it is greater than 5, less than 6, or 0r 0
  *
  * Return: Always 0.
- *
  */
 int main(void)
 {
