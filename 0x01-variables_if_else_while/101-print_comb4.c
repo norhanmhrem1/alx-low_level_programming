@@ -19,6 +19,7 @@ int main(void)
 			int i = 50;
 
 			while (i <= 57)
+			{
 				if (i > m && m > n)
 			{
 				putchar(n);
@@ -29,6 +30,8 @@ int main(void)
 					putchar (',');
 					putchar (' ');
 				}
+			}
+			i++;
 			}
 			m++;
 		}
