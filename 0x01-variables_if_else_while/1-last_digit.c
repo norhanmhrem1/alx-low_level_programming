@@ -4,13 +4,14 @@
 
 /**
  * main - entry point
- * main - Prints the last digit of a randomly numbe
  *
- * Return: Always 0.
+ * description - Prints the last digit of a randomly numbe
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n, digit;
+	int n, digit; 
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;/
@@ -21,5 +22,5 @@ int main(void)
 		printf("Last digit of %d is %d and is less than 6 and not 0\n",digit , n);
 	else if (digit == 0)
 		printf("Last digit of %d is %d and is 0\n",digit , n);
-	return (0);
+	return (0); 
 }
