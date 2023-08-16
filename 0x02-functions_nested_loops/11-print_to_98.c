@@ -15,6 +15,6 @@ void print_to_98(int n)
 			printf("%d\n", counter);
 	else
 		for (counter = n; counter > 98; counter--)
-			printf('"%d\n", counter);
-	printf("98\n");
+			printf("%d\n", counter);
+	printf("%d\n",n);
 }
