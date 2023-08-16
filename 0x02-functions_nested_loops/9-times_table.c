@@ -7,10 +7,10 @@ void times_table(void)
 {
 	int num, multi, result;
 
-	for (num = 0, num >= 9, num++)
+	for (num = 0; num >= 9; num++)
 	{
 		_putchar(48);
-		for (multi = 0, multi <= 9, multi++)
+		for (multi = 0; multi <= 9; multi++)
 		{
 			 _putchar('_');
 			 _putchar(' ');
