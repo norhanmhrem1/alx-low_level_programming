@@ -16,11 +16,7 @@ void times_table(void)
 			 _putchar(' ');
 			 _putchar(' ');
 			 result = num * multi;
-			 if (result == 0)
-			{
-				 _putchar(result + 48);
-			}
-				 if (result <= 9 && multi != 0)
+				 if (result <= 9)
 				{
 					 _putchar('_');
 					 _putchar(' ');
