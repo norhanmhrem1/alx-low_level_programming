@@ -25,7 +25,6 @@ void times_table(void)
 					 _putchar('_');
 					 _putchar(' ');
 					 _putchar(' ');
-					 _putchar(result + 48);
 				}
 				 else if (result >= 9)
 						{
