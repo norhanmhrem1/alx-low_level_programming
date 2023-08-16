@@ -8,7 +8,7 @@
 int main(void)
 {
 	unsigned long fib1 = 0, fib2 = 1, sum = 0;
-	float totalsum = 0;
+	float totalsum;
 
 	while (1)
 	{
