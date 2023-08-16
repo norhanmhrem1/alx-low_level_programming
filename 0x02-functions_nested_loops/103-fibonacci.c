@@ -13,6 +13,8 @@ int main(void)
 	while (1)
 	{
 		sum = fib1 + fib2;
+		if (sum > 4000000)
+			break;
 		if (sum < 4000000 && (sum % 2) == 0)
 			totalsum = totalsum + sum;
 		fib1 = fib2;
