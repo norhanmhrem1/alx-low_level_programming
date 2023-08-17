@@ -10,16 +10,16 @@ void print_times_table(int n)
 	{
 		for (num = 0; num <= n; num++)
 		{
-			_putchar(48)
+			_putchar(48);
 				for (multi = 1; multi <= n; multi++)
 				{
 					_putchar(',');
 					_putchar(' ');
 					result = multi * num;
 					if (result <= 9)
-						_putchar(' ')
+						_putchar(' ');
 					if (result <= 99)
-								_putchar(' ');
+						_putchar(' ');
 					if (result >= 100)
 					{
 						_putchar((result / 100) + 48);
@@ -32,4 +32,4 @@ void print_times_table(int n)
 		_putchar('\n');
 		}
 	}
-}        
+}
