@@ -10,15 +10,17 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-	int size;
+	int size = 0;
+	int size2 = 0;
 
-	for (size = 0; s1[size] != '\0' && s2[size] != '\0'; size++)
+	while (s1[size] != '\0' && s2[siz2e] != '\0')
 	{
-		if (s1[size] != s2[size])
+		if (s1[size] != s2[size2])
 		{
-			return (s1[size] - s2[size]);
+			return (s1[size] - s2[size2]);
 		}
 		size++;
+		size2++;
 	}
 
 	return (0);
