@@ -5,7 +5,7 @@
  *@s: srting.
  *@accept: bytes.
  *
- *return: the number of bytes n in the initial segment of s .
+ *return: the number of bytes.
 */
 
 unsigned int _strspn(char *s, char *accept)
