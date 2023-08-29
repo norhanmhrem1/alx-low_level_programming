@@ -2,10 +2,10 @@
 
 /**
  *_strstr - a function that locates a substring.
- *haystack: a pointer to the string to be searched.
- *needle: a pointer to the substring to search for.
+ *@haystack: a pointer to the string to be searched.
+ *@needle: a pointer to the substring to search for.
  *
- *Returns a pointer to the beginning of the located substring
+ *Returns a pointer to the beginning of the located substring.
  *or NULL if the substring is not found.
 */
 
