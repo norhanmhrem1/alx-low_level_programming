@@ -29,11 +29,15 @@ int main(int argc, char *argv[])
 	}
 
 	result = 0;
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < 5 && money  >= 0; i++)
 	{
 		if (money >= coins[i])
 		{
-			result += coins[i] - money;
+			result += money / coins[i];
+			if (money % coins[i] == 0)
+			{
+				break;
+			}
 		}
 	}
 
