@@ -28,6 +28,7 @@ char *argstostr(int ac, char **av)
 		{
 			ptr[r] = av[i][j];
 			r++;
+			ptr[r] = '\n';
 		}
 	}
 	ptr[r] = '\0';
