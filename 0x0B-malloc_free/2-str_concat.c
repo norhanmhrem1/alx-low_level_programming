@@ -20,22 +20,27 @@ char *str_concat(char *s1, char *s2)
 	size1 = 0;
 	size2 = 0;
 	while (s1[size1] != '\0')
+	{
 		size1++;
-
+	}
 	while (s2[size2] != '\0')
+	{
 		size2++;
-
-	ptr = malloc(sizeof(char) * (size1 + size2 + 1);
+	}
+	ptr = malloc(sizeof(char) * (size1 + size2 + 1));
 
 	if (ptr == NULL)
+	{
 		return (NULL);
-
+	}
 	for (size1 = 0; s1[size1] != '\0'; size1++)
+	{
 		ptr[size1] = s1[size1];
-
+	}
 	for (size2 = 0; s2[size2] != '\0'; size2++, size1++)
+	{
 		ptr[size1] = s2[size2];
-
+	}
 	ptr[size1] = '\0';
 	return (ptr);
 }
