@@ -31,7 +31,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		ptr[i] = s1[i];
 	}
-	for (j = 0; j < n; j++)
+	for (j = 0; n < size2 && i < size1 + n; j++)
+	{
+		ptr[i] = s2[j];
+		i++;
+	}
+	for (j = 0; n > = size2 && i < size1 + size2; j++)
 	{
 		ptr[i] = s2[j];
 		i++;
