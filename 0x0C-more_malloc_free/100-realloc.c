@@ -7,47 +7,46 @@
  *@new_size: new size of the new memory block
  *
  *Return: pointer to the newly allocated memory block
- */
+*/
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *p;
+	void *p; /* reallocated pointer */
 	unsigned int i;
 
-	if (new_size == old_size)
-		return (ptr);
-
+	/* free memory if reallocate 0 */
 	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
 
+	/* return ptr if reallocating same old size */
+	if (new_size == old_size)
+		return (ptr);
+
+	/* malloc new size if ptr is originally null */
 	if (ptr == NULL)
 	{
-		p = malloc(new_size)
+		p = malloc(new_size);
+
 		if (p == NULL)
 			return (NULL);
+
 		else
 			return (p);
 	}
-
+	/* malloc and check error */
 	p = malloc(new_size);
+
 	if (p == NULL)
 		return (NULL);
 
-	char *ptr1 = ptr;
+	/* fill up values up till minimum of old or new size */
+	for (i = 0; i < old_size && i < new_size; i++)
+		*((char *)p + i) = *((char *)ptr + i);
 
-	if (new_size < old_size)
-	{
-		for (i = 0; i < new_size; i++)
-			p[i] = ptr1[i];
-	}
+	free(ptr); /* free old ptr */
 
-	if (new_size > old_size)
-	{
-		for (i = 0; i < old_size; i++)
-			p[i] = ptr1[i];
-	}
-	free(ptr);
 	return (p);
+
 }
