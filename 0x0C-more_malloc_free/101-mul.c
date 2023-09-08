@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 #define ERR_MSG "Error"
 
