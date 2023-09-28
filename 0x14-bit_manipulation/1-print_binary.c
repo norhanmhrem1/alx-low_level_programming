@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 	bits = sizeof(n) * 8;
 	x = 1 << (bits - 1);
 	count = 0;
-	while (bits >= 0)
+	while (bits > 0)
 	{
 		if (n & x)
 		{
