@@ -3,26 +3,25 @@
 /**
  * print_binary - prints the binary equivalent of a decimal number
  * @n: number to print in binary
- */
+*/
+
 void print_binary(unsigned long int n)
 {
-	int bits, count;
+	int i, count = 0;
+	unsigned long int current;
 
-	bits = sizeof(n) * 8;
-	count = 0;
-	while (bits > 0)
+	for (i = 63; i >= 0; i--)
 	{
-		if (n & (1LU << (bits - 1)))
+		current = n >> i;
+
+		if (current & 1)
 		{
 			_putchar('1');
 			count++;
 		}
-		else
-		{
-			 _putchar('0');
-		}
-		bits--;
+		else if (count)
+			_putchar('0');
 	}
-	if (count != 0)
+	if (!count)
 		_putchar('0');
 }
